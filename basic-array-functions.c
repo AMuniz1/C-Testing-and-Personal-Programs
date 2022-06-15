@@ -9,7 +9,7 @@ void inputArray(int* arr, size_t size){
 }
 void printArray(int* arr, size_t size){
   for(size_t i = 0; i < size; i++){
-    printf("array[%u] = %d\n", i, arr[i]);
+    printf("array[%lu] = %d\n", i, arr[i]);
   }
 }
 size_t sizeArray(){
