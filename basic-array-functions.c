@@ -12,6 +12,23 @@ void printArray(int* arr, size_t size){
     printf("array[%lu] = %d\n", i, arr[i]);
   }
 }
+void bubbleSort(int *arr, size_t size){
+
+  void swap(int *element1Ptr, int *element2Ptr);
+
+  for (size_t pass = 0; pass < size-1; pass++){
+    for (size_t j = 0; j < size-1; j++) {
+      if(arr[j]>arr[j+1]){
+        swap(&arr[j], &arr[j+1]);
+      }
+    }
+  }
+}
+void swap(int *element1Ptr, int *element2Ptr){
+  int hold = *element1Ptr;
+  *element1Ptr = *element2Ptr;
+  *element2Ptr = hold;
+}
 size_t sizeArray(){
   size_t size;
   printf("Enter the size of the array: \n");
